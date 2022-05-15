@@ -235,7 +235,7 @@ button {
 }
 .main-nav-list {
   margin-top: 4.7rem;
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
   list-style: none;
   width: 200px;
   font-size: 1.4rem;
@@ -257,7 +257,11 @@ button {
   margin: 1rem 0 1rem 0;
 }
 .main-nav-list a {
+  padding: .5rem 1rem .5rem 6rem;
   color: var(--color-grey);
+}
+.main-nav-list a:hover{
+ border-right: 3px solid var(--color-primaray);
 }
 .main-nav__left-item {
   display: flex;
@@ -304,11 +308,12 @@ button {
     transition: none;
   }
   .main-nav-list a {
-    padding: .3rem .6rem;
+    padding: 0.3rem 0.6rem;
     color: var(--color-white);
     border-radius: 7px;
   }
   .main-nav-list a:hover {
+    border: none;
     background-color: #78cbe5;
   }
   .main-nav-list .main-nav-list__item {
@@ -894,16 +899,19 @@ button {
   width: 50%;
   margin-bottom: 1rem;
 }
-.main-footer__item h6{
+.main-footer__item h6 {
   font-size: 1rem;
   font-weight: 500;
-   margin-bottom: 0.9rem;
+  margin-bottom: 0.9rem;
 }
 .main-footer__item a {
   font-size: 0.9rem;
   color: #fff;
   margin-bottom: 0.5rem;
   display: block;
+}
+.main-footer__item a:hover {
+  color: var(--color-secondary-light);
 }
 .main-footer-end {
   display: flex;
@@ -953,6 +961,18 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
   cursor: pointer;
+}
+.social-icon__container.youtube:hover {
+  background-color: rgba(255, 0, 0);
+}
+.social-icon__container.twitter:hover {
+  background-color: rgba(0, 172, 238);
+}
+.social-icon__container.dribbble:hover {
+  background-color: rgba(234, 76, 137);
+}
+.social-icon__container.instagram:hover {
+  background-color: rgba(233, 89, 80);
 }
 @media (min-width: 768px) {
   .social-icons {
